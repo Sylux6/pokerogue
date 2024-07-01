@@ -1,4 +1,4 @@
-import { SimpleTranslationEntries } from "#app/plugins/i18n";
+import { SimpleTranslationEntries } from "#app/interfaces/locales";
 
 /**
  * The menu namespace holds most miscellaneous text that isn't directly part of the game's
@@ -6,27 +6,41 @@ import { SimpleTranslationEntries } from "#app/plugins/i18n";
  * account interactions, descriptive text, etc.
  */
 export const starterSelectUiHandler: SimpleTranslationEntries = {
-    "confirmStartTeam":'Begin with these Pokémon?',
-    "growthRate": "Growth Rate:",
-    "ability": "Ability:",
-    "passive": "Passive:",
-    "nature": "Nature:",
-    "eggMoves": 'Egg Moves',
-    "start": "Start",
-    "addToParty": "Add to Party", 
-    "toggleIVs": 'Toggle IVs',
-    "manageMoves": 'Manage Moves',
-    "useCandies": 'Use Candies',
-    "selectMoveSwapOut": "Select a move to swap out.",
-    "selectMoveSwapWith": "Select a move to swap with",
-    "unlockPassive": "Unlock Passive",
-    "reduceCost": "Reduce Cost",
-    "cycleShiny": "R: Cycle Shiny",
-    "cycleForm": 'F: Cycle Form',
-    "cycleGender": 'G: Cycle Gender',
-    "cycleAbility": 'E: Cycle Ability',
-    "cycleNature": 'N: Cycle Nature',
-    "cycleVariant": 'V: Cycle Variant',
-    "enablePassive": "Enable Passive",
-    "disablePassive": "Disable Passive"
-}
+  "confirmStartTeam": "Mit diesen Pokémon losziehen?",
+  "gen1": "I",
+  "gen2": "II",
+  "gen3": "III",
+  "gen4": "IV",
+  "gen5": "V",
+  "gen6": "VI",
+  "gen7": "VII",
+  "gen8": "VIII",
+  "gen9": "IX",
+  "growthRate": "Wachstum:",
+  "ability": "Fähigkeit:",
+  "passive": "Passiv:",
+  "nature": "Wesen:",
+  "eggMoves": "Ei-Attacken",
+  "addToParty": "Zum Team hinzufügen",
+  "toggleIVs": "DVs anzeigen/verbergen",
+  "manageMoves": "Attacken ändern",
+  "manageNature": "Wesen ändern",
+  "useCandies": "Bonbons verwenden",
+  "selectNature": "Wähle das neue Wesen.",
+  "selectMoveSwapOut": "Wähle die zu ersetzende Attacke.",
+  "selectMoveSwapWith": "Wähle die gewünschte Attacke.",
+  "unlockPassive": "Passiv-Skill freischalten",
+  "reduceCost": "Preis reduzieren",
+  "sameSpeciesEgg": "Ein Ei kaufen",
+  "cycleShiny": ": Schillernd",
+  "cycleForm": ": Form",
+  "cycleGender": ": Geschlecht",
+  "cycleAbility": ": Fähigkeit",
+  "cycleNature": ": Wesen",
+  "cycleVariant": ": Seltenheit",
+  "enablePassive": "Passiv-Skill aktivieren",
+  "disablePassive": "Passiv-Skill deaktivieren",
+  "locked": "Gesperrt",
+  "disabled": "Deaktiviert",
+  "uncaught": "Ungefangen"
+};

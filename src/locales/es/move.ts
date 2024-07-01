@@ -1,4 +1,4 @@
-import { MoveTranslationEntries } from "#app/plugins/i18n";
+import { MoveTranslationEntries } from "#app/interfaces/locales";
 
 export const move: MoveTranslationEntries = {
   pound: {
@@ -2915,7 +2915,7 @@ export const move: MoveTranslationEntries = {
   },
   zippyZap: {
     name: "Pikaturbo",
-    effect: "Ataque eléctrico a la velocidad del rayo. Este movimiento tiene prioridad alta y propina golpes críticos.",
+    effect: "The user attacks the target with bursts of electricity at high speed. This move always goes first and raises the user's evasiveness.",
   },
   splishySplash: {
     name: "Salpikasurf",
@@ -2931,7 +2931,7 @@ export const move: MoveTranslationEntries = {
   },
   bouncyBubble: {
     name: "Vapodrenaje",
-    effect: "Ataca lanzando proyectiles de agua y recupera una cantidad de PS equivalente a la mitad del daño causado.",
+    effect: "Ataca lanzando proyectiles de agua y recupera una cantidad de PS equivalente a la del daño causado.",
   },
   buzzyBuzz: {
     name: "Joltioparálisis",

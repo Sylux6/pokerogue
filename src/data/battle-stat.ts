@@ -1,3 +1,5 @@
+import i18next from "i18next";
+
 export enum BattleStat {
   ATK,
   DEF,
@@ -11,53 +13,57 @@ export enum BattleStat {
 
 export function getBattleStatName(stat: BattleStat) {
   switch (stat) {
-    case BattleStat.ATK:
-      return 'Attack';
-    case BattleStat.DEF:
-      return 'Defense';
-    case BattleStat.SPATK:
-      return 'Sp. Atk';
-    case BattleStat.SPDEF:
-      return 'Sp. Def';
-    case BattleStat.SPD:
-      return 'Speed';
-    case BattleStat.ACC:
-      return 'Accuracy';
-    case BattleStat.EVA:
-      return 'Evasiveness';
-    default:
-      return '???';
+  case BattleStat.ATK:
+    return i18next.t("pokemonInfo:Stat.ATK");
+  case BattleStat.DEF:
+    return i18next.t("pokemonInfo:Stat.DEF");
+  case BattleStat.SPATK:
+    return i18next.t("pokemonInfo:Stat.SPATK");
+  case BattleStat.SPDEF:
+    return i18next.t("pokemonInfo:Stat.SPDEF");
+  case BattleStat.SPD:
+    return i18next.t("pokemonInfo:Stat.SPD");
+  case BattleStat.ACC:
+    return i18next.t("pokemonInfo:Stat.ACC");
+  case BattleStat.EVA:
+    return i18next.t("pokemonInfo:Stat.EVA");
+  default:
+    return "???";
   }
 }
 
-export function getBattleStatLevelChangeDescription(levels: integer, up: boolean) {
-  if (up) {
-    switch (levels) {
+export function getBattleStatLevelChangeDescription(pokemonNameWithAffix: string, stats: string, levels: integer, up: boolean) {
+  const stringKey = (() => {
+    if (up) {
+      switch (levels) {
       case 1:
-        return 'rose';
+        return "battle:statRose";
       case 2:
-        return 'sharply rose';
+        return "battle:statSharplyRose";
       case 3:
       case 4:
       case 5:
       case 6:
-        return 'rose drastically'; 
+        return "battle:statRoseDrastically";
       default:
-        return 'won\'t go any higher';
-    }
-  } else {
-    switch (levels) {
+        return "battle:statWontGoAnyHigher";
+      }
+    } else {
+      switch (levels) {
       case 1:
-        return 'fell';
+        return "battle:statFell";
       case 2:
-        return 'harshly fell';
+        return "battle:statHarshlyFell";
       case 3:
       case 4:
       case 5:
       case 6:
-        return 'severely fell';
+        return "battle:statSeverelyFell";
       default:
-        return 'won\'t go any lower';
+        return "battle:statWontGoAnyLower";
+      }
     }
-  }
+  })();
+
+  return i18next.t(stringKey, { pokemonNameWithAffix, stats });
 }

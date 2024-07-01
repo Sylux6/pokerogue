@@ -1,10 +1,10 @@
-import { SimpleTranslationEntries } from "#app/plugins/i18n";
+import { SimpleTranslationEntries } from "#app/interfaces/locales";
 
 export const pokeball: SimpleTranslationEntries = {
-    "pokeBall": "Pokéball",
-    "greatBall": "Superball",
-    "ultraBall": "Hyperball",
-    "rogueBall": "Rogueball",
-    "masterBall": "Meisterball",
-    "luxuryBall": "Luxusball",
+  "pokeBall": "Pokéball",
+  "greatBall": "Superball",
+  "ultraBall": "Hyperball",
+  "rogueBall": "Rogueball",
+  "masterBall": "Meisterball",
+  "luxuryBall": "Luxusball",
 } as const;

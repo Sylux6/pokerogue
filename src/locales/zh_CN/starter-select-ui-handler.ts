@@ -1,4 +1,4 @@
-import { SimpleTranslationEntries } from "#app/plugins/i18n";
+import { SimpleTranslationEntries } from "#app/interfaces/locales";
 
 /**
  * The menu namespace holds most miscellaneous text that isn't directly part of the game's
@@ -6,27 +6,41 @@ import { SimpleTranslationEntries } from "#app/plugins/i18n";
  * account interactions, descriptive text, etc.
  */
 export const starterSelectUiHandler: SimpleTranslationEntries = {
-    "confirmStartTeam":'使用这些宝可梦开始游戏吗？',
-    "growthRate": "成长速度：",
-    "ability": "特性：",
-    "passive": "被动：",
-    "nature": "性格：",
-    "eggMoves": '蛋招式',
-    "start": "开始",
-    "addToParty": "加入队伍", 
-    "toggleIVs": '切换个体值',
-    "manageMoves": '管理招式',
-    "useCandies": '使用糖果',
-    "selectMoveSwapOut": "选择要替换的招式。",
-    "selectMoveSwapWith": "选择要替换成的招式",
-    "unlockPassive": "解锁被动",
-    "reduceCost": "降低花费",
-    "cycleShiny": "R: 切换闪光",
-    "cycleForm": 'F: 切换形态',
-    "cycleGender": 'G: 切换性别',
-    "cycleAbility": 'E: 切换特性',
-    "cycleNature": 'N: 切换性格',
-    "cycleVariant": 'V: 切换变种',
-    "enablePassive": "启用被动",
-    "disablePassive": "禁用被动"
-}
+  "confirmStartTeam":"使用这些宝可梦开始游戏吗？",
+  "gen1": "I",
+  "gen2": "II",
+  "gen3": "III",
+  "gen4": "IV",
+  "gen5": "V",
+  "gen6": "VI",
+  "gen7": "VII",
+  "gen8": "VIII",
+  "gen9": "IX",
+  "growthRate": "成长速度：",
+  "ability": "特性：",
+  "passive": "被动：",
+  "nature": "性格：",
+  "eggMoves": "蛋招式",
+  "addToParty": "加入队伍",
+  "toggleIVs": "显示个体",
+  "manageMoves": "管理招式",
+  "manageNature": "管理性格",
+  "useCandies": "使用糖果",
+  "selectNature": "选择性格",
+  "selectMoveSwapOut": "选择要替换的招式。",
+  "selectMoveSwapWith": "选择要替换成的招式",
+  "unlockPassive": "解锁被动",
+  "reduceCost": "降低花费",
+  "sameSpeciesEgg": "兑换一颗蛋",
+  "cycleShiny": ": 闪光",
+  "cycleForm": ": 形态",
+  "cycleGender": ": 性别",
+  "cycleAbility": ": 特性",
+  "cycleNature": ": 性格",
+  "cycleVariant": ": 变种",
+  "enablePassive": "启用被动",
+  "disablePassive": "禁用被动",
+  "locked": "未解锁",
+  "disabled": "已禁用",
+  "uncaught": "未捕获"
+};
